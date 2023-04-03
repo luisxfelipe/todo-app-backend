@@ -16,9 +16,9 @@ import { UpdateTodoDto } from './dto/update-todo.dto';
 import { ApiTags } from '@nestjs/swagger';
 import { ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { FindAllTodoSwagger } from './swagger/findAll-todo.swagger';
-import { CreateTodoSwagger } from './swagger/create-todo.swagger copy 2';
+import { CreateTodoSwagger } from './swagger/create-todo.swagger';
 import { FindOneTodoSwagger } from './swagger/findOne-todo.swagger';
-import { UpdateTodoSwagger } from './swagger/update-todo.swagger copy 3';
+import { UpdateTodoSwagger } from './swagger/update-todo.swagger';
 import { BadRequestSwagger } from '../helpers/swagger/bad-request.swagger';
 import { NotFoundSwagger } from '../helpers/swagger/not-found.swagger';
 

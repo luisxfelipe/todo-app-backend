@@ -178,7 +178,7 @@ describe('TodoService', () => {
       expect(result).toBeUndefined();
 
       // verifica se o método remove foi chamado uma vez
-      expect(todoRepository.softDelete).toHaveBeenCalledTimes(1);
+      expect(todoRepository.findOneOrFail).toHaveBeenCalledTimes(1);
 
       // Verifica se o método softDelete foi chamado uma vez
       expect(todoRepository.softDelete).toHaveBeenCalledTimes(1);

@@ -13,8 +13,7 @@ import {
 import { TodoService } from './todo.service';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
-import { ApiTags } from '@nestjs/swagger';
-import { ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { FindAllTodoSwagger } from './swagger/findAll-todo.swagger';
 import { CreateTodoSwagger } from './swagger/create-todo.swagger';
 import { FindOneTodoSwagger } from './swagger/findOne-todo.swagger';

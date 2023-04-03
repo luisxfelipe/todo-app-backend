@@ -73,11 +73,15 @@ export class TodoController {
 
   @Put(':id')
   @ApiOperation({ summary: 'Atualizar uma tarefa' })
-  @ApiResponse({ status: 200, description: 'Tarefa atualizada com sucesso' })
+  @ApiResponse({
+    status: 200,
+    description: 'Tarefa atualizada com sucesso',
+    type: UpdateTodoSwagger,
+  })
   @ApiResponse({
     status: 400,
     description: 'Parametros inválidos',
-    type: UpdateTodoSwagger,
+    type: BadRequestSwagger,
   })
   @ApiResponse({
     status: 404,

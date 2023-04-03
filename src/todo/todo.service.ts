@@ -12,7 +12,7 @@ export class TodoService {
     private readonly todoRepository: Repository<Todo>,
   ) {}
 
-  create(createTodoDto: CreateTodoDto) {
+  async create(createTodoDto: CreateTodoDto) {
     return this.todoRepository.save(this.todoRepository.create(createTodoDto));
   }
 
